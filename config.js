@@ -3,12 +3,6 @@ window.BG_PAY = {
   goalProgram: "query_to_tools",
   enroll: "https://bgcalls.ru/tools",
   program: "https://bgcalls.ru/tools#rec713897254",
-  company: "mailto:info@bgcalls.ru",
-  question: "https://t.me/sAnastasia?text=" + encodeURIComponent(
-    "Здравствуйте! Вопрос по курсу «Инструменты 1С для аналитика»."
-  )
-};
-  company: "mailto:info@bgcalls.ru",
   question: "https://t.me/sAnastasia?text=" + encodeURIComponent(
     "Здравствуйте! Вопрос по курсу «Инструменты 1С для аналитика»."
   )

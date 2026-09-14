@@ -25,14 +25,26 @@
     });
   }
 
+  function goAfterGoal(el, goalName) {
+    el.addEventListener("click", function (e) {
+      var href = el.getAttribute("href");
+      if (typeof ym !== "function" || !href) return;
+      e.preventDefault();
+      var gone = false;
+      function go() {
+        if (gone) return;
+        gone = true;
+        window.location.href = href;
+      }
+      ym(counter, "reachGoal", goalName, {}, go);
+      setTimeout(go, 500);
+    });
+  }
+
   setHref(".js-enroll", enroll);
   setHref(".js-program", program);
 
   document.querySelectorAll(".js-program").forEach(function (el) {
-    el.addEventListener("click", function () {
-      if (typeof ym === "function") {
-        ym(counter, "reachGoal", goalProgram);
-      }
-    });
+    goAfterGoal(el, goalProgram);
   });
 })();
