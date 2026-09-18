@@ -37,6 +37,12 @@
 <body>
   <header class="wrap top">
     <div><strong>bgcalls</strong></div>
+    <nav class="top-nav" aria-label="Разделы">
+      <a href="#obuchayu">Обучаю</a>
+      <a href="#obo-mne">Обо мне</a>
+      <a href="#socseti">Соцсети</a>
+      <a href="#podcasts">Подкасты</a>
+    </nav>
     <div>28 сентября</div>
   </header>
 
@@ -134,15 +140,88 @@
       </details>
     </section>
 
-    <section class="wrap">
-      <h2>Об авторе</h2>
+    <section class="wrap" id="obuchayu">
+      <h2>Обучаю</h2>
+      <div class="card teach-lead">
+        <p class="teach-school">Школа прикладной разработки <a href="https://bgcalls.ru">bgcalls.ru</a></p>
+        <p>Практические навыки, которые нужны работодателю. Живое обучение, фокус на практике, минимум теории.</p>
+        <p><a class="btn btn-ghost" href="https://bgcalls.ru">На сайт школы</a></p>
+      </div>
+      <div class="grid-2 teach-courses">
+        <article class="card">
+          <h3>Практикум разработки</h3>
+          <p>Практикум для программистов 1С: доработка типовых, стандарты разработки, применение БСП. От «код в типовой — китайская грамота» к уверенной работе на реальных задачах.</p>
+          <p><a class="btn btn-main" href="https://bgcalls.ru/practice">Подробнее</a></p>
+        </article>
+        <article class="card">
+          <h3>Инструменты аналитика</h3>
+          <p>Курс для аналитиков и консультантов 1С: язык запросов, СКД, архитектура и формы — без написания кода.</p>
+          <p><a class="btn btn-main" href="https://bgcalls.ru/tools">Подробнее</a></p>
+        </article>
+      </div>
+      <div class="card mentor-card">
+        <h3>Профиль на getMentor</h3>
+        <p>Менторство по 1С: старт в профессии, архитектура, оценка навыков, выстраивание обучения в команде.</p>
+        <p><a class="btn btn-ghost" href="https://getmentor.dev/mentor/anastasiia-siniakova-1230">Открыть профиль</a></p>
+      </div>
+    </section>
+
+    <section class="wrap" id="obo-mne">
+      <h2>Обо мне</h2>
       <div class="card author">
         <img class="author-photo" src="author.jpg" alt="Анастасия Синякова" width="280" height="350">
         <div>
           <p class="author-name">Анастасия Синякова</p>
-          <p>Автор курса, программист 1С. Школа прикладной разработки <a href="https://bgcalls.ru">bgcalls</a>.</p>
-          <p>В 1С с 2008 года, прошла путь от стажера до руководителя разработки в компании-франчайзи. Сертифицированный специалист 1С. Ментор начинающих 1Сников и автор канала об 1С и обучении <a href="https://t.me/yellow_note">«Заметки 1Сницы»</a>.</p>
+          <p>Руководила отделом разработки в компании-франчайзи 1С, сформировала «с нуля» команду 20 человек, где все сотрудники приходили без опыта и росли внутри компании. После чего поняла, что больше всего нравится заниматься обучением и наставничеством.</p>
+          <ul class="about-facts">
+            <li><strong>18 лет</strong> в 1С — ERP и ЗУП, большинство проектов — внедрение</li>
+            <li>Сертифицированный специалист 1С</li>
+            <li>Ментор начинающих специалистов</li>
+            <li>Автор канала об 1С и обучении <a href="https://t.me/yellow_note">«Заметки 1Сницы»</a></li>
+          </ul>
+          <p>Работала на проектах в ролях программиста, тимлида, архитектора — от стажёра до руководителя разработки.</p>
+          <p>
+            <a class="btn btn-ghost" href="https://uc1.1c.ru/account/summary/?token=86fdb60becf1d8d3e52e398cdead7d71">Паспорт квалификации 1С</a>
+          </p>
         </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="socseti">
+      <h2>Социальные сети</h2>
+      <div class="grid-2 link-grid">
+        <a class="card link-card" href="https://t.me/yellow_note">
+          <span class="link-label">Телеграм</span>
+          <span class="link-title">Заметки 1Сницы</span>
+          <span class="link-desc">Канал о мире 1С, обучении и карьере</span>
+        </a>
+        <a class="card link-card" href="https://vk.com/yellow_note">
+          <span class="link-label">ВКонтакте</span>
+          <span class="link-title">Заметки 1Сницы</span>
+          <span class="link-desc">Группа с материалами и анонсами</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap" id="podcasts">
+      <h2>Подкасты</h2>
+      <p class="section-lead">Подкаст «Заметки 1Сницы» — интервью и разговоры о 1С, обучении и карьере.</p>
+      <div class="grid-3 link-grid">
+        <a class="card link-card" href="https://rutube.ru/channel/43497980/">
+          <span class="link-label">RuTube</span>
+          <span class="link-title">Видеовыпуски</span>
+          <span class="link-desc">Смотреть на RuTube</span>
+        </a>
+        <a class="card link-card" href="https://www.youtube.com/@yellow_notes">
+          <span class="link-label">YouTube</span>
+          <span class="link-title">Канал @yellow_notes</span>
+          <span class="link-desc">Смотреть на YouTube</span>
+        </a>
+        <a class="card link-card" href="https://music.yandex.ru/album/25889042">
+          <span class="link-label">Я.Музыка</span>
+          <span class="link-title">Аудиоверсия</span>
+          <span class="link-desc">Слушать на Яндекс Музыке</span>
+        </a>
       </div>
     </section>
   </main>
