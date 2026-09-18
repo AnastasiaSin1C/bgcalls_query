@@ -50,14 +50,6 @@ img { max-width: 100%; }
   color: var(--muted);
   max-width: 40rem;
 }
-.teach-lead { margin-bottom: 14px; }
-.teach-school {
-  margin: 0 0 8px;
-  font-size: 18px;
-  font-weight: 700;
-}
-.teach-courses { margin-bottom: 14px; }
-.mentor-card h3 { margin-bottom: 8px; }
 .about-facts {
   margin: 0 0 12px;
   padding-left: 18px;
