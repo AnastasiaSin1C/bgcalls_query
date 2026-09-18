@@ -148,6 +148,19 @@ ul { margin: 0; padding-left: 18px; }
 }
 .quote { font-size: 17px; margin: 0 0 10px; }
 .who { color: var(--muted); font-size: 14px; }
+.song p { margin: 0 0 12px; }
+.song p:last-of-type { margin-bottom: 0; }
+.song-title {
+  margin: 16px 0 10px !important;
+  font-weight: 700;
+  font-size: 17px;
+}
+.song-player {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 4px;
+}
 .price { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; margin: 8px 0 12px; }
 .price span { font-size: 18px; font-weight: 600; color: var(--muted); }
 .faq details {
