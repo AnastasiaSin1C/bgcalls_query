@@ -2,8 +2,10 @@
   var pay = window.BG_PAY || {};
   var counter = pay.metrika || 94870906;
   var goalProgram = pay.goalProgram || "query_to_tools";
+  var goalLead = pay.goalLead || "skd_lesson";
   var enroll = pay.enroll || "https://bgcalls.ru/tools";
   var program = pay.program || "https://bgcalls.ru/tools#rec713897254";
+  var lesson = pay.lesson || "https://t.me/bgcalls_tools_bot?start=link_bGJ6SiWSzK";
 
   function withCampaignParams(url) {
     var qs = window.location.search.replace(/^\?/, "");
@@ -43,8 +45,17 @@
 
   setHref(".js-enroll", enroll);
   setHref(".js-program", program);
+  // Bot start-параметр не смешиваем с UTM страницы — href из HTML/config как есть
+  document.querySelectorAll(".js-lead").forEach(function (el) {
+    if (!el.getAttribute("href")) {
+      el.setAttribute("href", lesson);
+    }
+  });
 
   document.querySelectorAll(".js-program").forEach(function (el) {
     goAfterGoal(el, goalProgram);
+  });
+  document.querySelectorAll(".js-lead").forEach(function (el) {
+    goAfterGoal(el, goalLead);
   });
 })();
