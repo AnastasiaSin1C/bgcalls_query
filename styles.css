@@ -182,6 +182,12 @@ h1 {
   grid-column: 1 / -1;
   max-width: 100%;
 }
+.grid-mods .card ul {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 15px;
+}
+.grid-mods .card li { margin-bottom: 6px; }
 .btn {
   display: inline-flex;
   align-items: center;
